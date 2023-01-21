@@ -1,0 +1,19 @@
+{
+  "name": "simplepage",
+  "version": "1.0.0",
+  "description": "for my thoughts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waldemar-00/SimplePage.git"
+  },
+  "author": "uladzimir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waldemar-00/SimplePage/issues"
+  },
+  "homepage": "https://github.com/Waldemar-00/SimplePage#readme"
+}
