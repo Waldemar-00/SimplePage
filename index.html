@@ -7,18 +7,99 @@
     <title>Title of browser</title>
 </head>
 <body>
+    <header>
+        <img alt="IMG logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" style='cursor: pointer; width:640px;
+        height:480px;' width="0" height="0">
+        <!--no jump page if page has width and height-->
+        <!--not work, because img has style!-->
+        <nav>
+            <ul>
+                <li>
+                    next html: 
+                    <a title="next page html" target="_blank" href="next.html">next html</a></li>
+                <li>
+                    simbolic entity:
+                    <a title="source of simbolic entity" target="_blank" href="https://www.toptal.com/designers/htmlarrows/symbols/">
+                        referens
+                    </a> &copy;
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>
+            section about tags
+        </h2>
+        <article>
+            <h3>anchor</h3>
+            <div>
+                If the anchor element has an href attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.
+            </div>
+            <div>
+                <span>More: </span>
+                <a href="https://developer.mozilla.org/docs/Web/HTML/Element/a">anchor</a>
+            </div>
+        </article>
+        <article>
+            <h3>image</h3>
+            <div>
+                An img element represents an image.
+            </div>
+            <div>
+                <span>More: </span>
+                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/img">img</a>
+            </div>
+        </article>
+        <article>
+            <h3>article</h3>
+            <div>
+                The article element represents a complete, or self-contained, composition in a document, page, application, or site and
+                that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a
+                magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other
+                independent item of content. Each article should be identified, typically by
+            </div>
+            <div>
+                <span>More: </span>
+                <a href="https://developer.mozilla.org/docs/Web/HTML/Element/article">article</a>
+            </div>
+        </article>
+        <article>
+            <h3>section</h3>
+            <div>
+                The section element represents a generic section of a document or application. A section, in this context, is a thematic
+                grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of
+                the section element.
+                <div>
+                    <span>More: </span>
+                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/section">section</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <aside>
+        <form action="submit">
+            <div>
+                <label for="name">name</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div>
+                <label for="surname">surname</label>
+                <input id="surname" name="surname" type="text">
+            </div>
+            <div>
+                <label for="telephone">phone</label>
+                <input id="telephone" name="tel" type="text">
+            </div>
+            <button>submit user</button>
+        </form>
+    </aside>
     <h1 title="&quot;Not the critic&quot;" 
     style='cursor: pointer;'>
     using html
     </h1>
-    <a title="next page html" target="_blank" href="next.html">next html</a>
+    
     <div>
         <h3>something about html</h3>
-        <p>simbolic entity: 
-            <a title="source of simbolic entity" target="_blank" 
-            href="https://www.toptal.com/designers/htmlarrows/symbols/">
-            referens
-            </a> &copy;</p>
         <ul>
             <li><span>&lt; - &lt;</span></li>
             <li><span>&gt; - &gt;</span></li>
@@ -26,10 +107,6 @@
             <li><span>&nbsp; - the non-breaking space symbol </span></li>
             <li><span>&quot;</span></li>
         </ul>
-    </div>
-    <div style='width:640px; height:480px;'>
-        <img alt="IMG logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" style='cursor: pointer; width:640px;
-        height:480px;'>
     </div>
     <div>
         <p id="myId" style="color: green;" class=".example">
@@ -52,5 +129,8 @@
         Javascript tutorials that are crystal clear.
         The content is just great (&nbsp;amazing&nbsp;)!
     </div>
+    <footer>
+        uladzimir 01.2023 &copy;
+    </footer>
 </body>
 </html>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Waldemar-00/SimplePage/issues"
   },
-  "homepage": "https://github.com/Waldemar-00/SimplePage#readme"
+  "homepage": "https://github.com/Waldemar-00/SimplePage#readme",
+  "dependencies": {
+    "browser-sync-client": "^2.27.11"
+  }
 }
