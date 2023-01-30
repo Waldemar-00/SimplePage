@@ -111,7 +111,23 @@
             </li>
         </ul>
     </div>
-    
+    <div>
+        <input id='inputJS' type='file' accept="img/*" multiple style="display: none">
+        <a href="#" id="anchor" style="font-size: 24px"><img src="./inputJS.gif" alt="fileInput"></a>
+    </div>
+    <div>
+        <input id="inputLabel" type='file' accept="img/*" multiple style="display: none">
+        <label for="inputLabel" style="width: 50px; height: 40px">
+            <img src="./inputLabel.gif" alt="fileInput" style="width: 300px; height: 200px">
+        </label>
+    </div>
+    <div>
+        <input id="dragAndDrop" type='file' accept="text/*" multiple style="display: none">
+        <label for="dragAndDrop" style="width: 50px; height: 40px">
+            <img src="./dragDrop.png" alt="fileInput" style="width: 300px; height: 200px">
+        </label>
+        
+    </div>
     <div>
         <h3>something about html</h3>
         <ul>
@@ -147,5 +163,32 @@
     <footer>
         uladzimir 01.2023 &copy;
     </footer>
+    <script>
+        const inputJS = document.getElementById("inputJS");
+        const anchor = document.getElementById("anchor");
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault(); // предотвращает перемещение к "#"
+                if (inputJS) {
+                    inputJS.click();
+                }
+            }, false);
+        const dragAndDrop = document.querySelector('dragAndDrop'); //it's only part of code
+        dragAndDrop.addEventListener('dragenter', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        }, false);
+        dragAndDrop.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+        dragAndDrop.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const transferData = e.dataTransfer;
+            const files = transferData.files;
+            const filesList = this.files;
+            console.log(filesList);
+        });
+    </script>
 </body>
 </html>
