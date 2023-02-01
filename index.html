@@ -1,194 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of browser</title>
-</head>
-<body>
-    <header>
-        <img alt="IMG logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" style='cursor: pointer; width:640px;
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title of browser</title>
+    </head>
+
+    <body>
+        <header>
+            <img alt="IMG logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" style='cursor: pointer; width:640px;
         height:480px;' width="0" height="0">
-        <!--no jump page if page has width and height-->
-        <!--not work, because img has style!-->
-        <nav>
-            <ul>
-                <li>
-                    next html: 
-                    <a title="next page html" target="_blank" href="next.html">next html</a></li>
-                <li>
-                    symbolic entity:
-                    <a title="source of simbolic entity" target="_blank" href="https://www.toptal.com/designers/htmlarrows/symbols/">
-                        referens
-                    </a> &copy;
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h1>
-        All about HTML tags
-    </h1> 
-    <section>
-        <h2>
-            section about tags
-        </h2>
-        <article>
-            <h3>anchor</h3>
-            <div>
-                If the anchor element has an href attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.
-            </div>
-            <div>
-                <span>More: </span>
-                <a href="https://developer.mozilla.org/docs/Web/HTML/Element/a">anchor</a>
-            </div>
-        </article>
-        <article>
-            <h3>image</h3>
-            <div>
-                An img element represents an image.
-            </div>
-            <div>
-                <span>More: </span>
-                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/img">img</a>
-            </div>
-        </article>
-        <article>
-            <h3>article</h3>
-            <div>
-                The article element represents a complete, or self-contained, composition in a document, page, application, or site and
-                that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a
-                magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other
-                independent item of content. Each article should be identified, typically by
-            </div>
-            <div>
-                <span>More: </span>
-                <a href="https://developer.mozilla.org/docs/Web/HTML/Element/article">article</a>
-            </div>
-        </article>
-        <article>
-            <h3>section</h3>
-            <div>
-                The section element represents a generic section of a document or application. A section, in this context, is a thematic
-                grouping of content. Each section should be identified, typically by including a heading ( h1- h6 element) as a child of
-                the section element.
+            <!--no jump page if page has width and height-->
+            <!--not work, because img has style!-->
+            <nav>
+                <ul>
+                    <li>
+                        next html:
+                        <a title="next page html" target="_blank" href="next.html">next html</a>
+                    </li>
+                    <li>
+                        symbolic entity:
+                        <a title="source of simbolic entity" target="_blank"
+                            href="https://www.toptal.com/designers/htmlarrows/symbols/">
+                            referens
+                        </a> &copy;
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>
+            All about HTML tags
+        </h1>
+        <section>
+            <h2>
+                section about tags
+            </h2>
+            <article>
+                <h3>anchor</h3>
+                <div>
+                    If the anchor element has an href attribute, then it represents a hyperlink (a hypertext anchor)
+                    labeled by its contents.
+                </div>
                 <div>
                     <span>More: </span>
-                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/section">section</a>
+                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/a">anchor</a>
                 </div>
-            </div>
-        </article>
-    </section>
-    <aside>
-        <form action="submit">
+            </article>
+            <article>
+                <h3>image</h3>
+                <div>
+                    An img element represents an image.
+                </div>
+                <div>
+                    <span>More: </span>
+                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/img">img</a>
+                </div>
+            </article>
+            <article>
+                <h3>article</h3>
+                <div>
+                    The article element represents a complete, or self-contained, composition in a document, page,
+                    application, or site and
+                    that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a
+                    forum post, a
+                    magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or
+                    gadget, or any other
+                    independent item of content. Each article should be identified, typically by
+                </div>
+                <div>
+                    <span>More: </span>
+                    <a href="https://developer.mozilla.org/docs/Web/HTML/Element/article">article</a>
+                </div>
+            </article>
+            <article>
+                <h3>section</h3>
+                <div>
+                    The section element represents a generic section of a document or application. A section, in this
+                    context, is a thematic
+                    grouping of content. Each section should be identified, typically by including a heading ( h1- h6
+                    element) as a child of
+                    the section element.
+                    <div>
+                        <span>More: </span>
+                        <a href="https://developer.mozilla.org/docs/Web/HTML/Element/section">section</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <form action="submit">
+                <div>
+                    <label for="name">name</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label for="surname">surname</label>
+                    <input id="surname" name="surname" type="text">
+                </div>
+                <div>
+                    <label for="telephone">phone</label>
+                    <input id="telephone" name="tel" type="text">
+                </div>
+                <button>submit user</button>
+            </form>
+        </aside>
+
+        <div>
+            <h3>unordered list</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>
+                    <h4>ordered list</h4>
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div>
             <div>
-                <label for="name">name</label>
-                <input id="name" name="name" type="text">
+                <a href="#" id="anchor" style="font-size: 24px"><img src="./inputJS.gif" alt="fileInput"></a>
             </div>
+            <input id='inputJS' type='file'
+                accept="img/*, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                multiple>
+        </div>
+        <div>
+            <label for="inputLabel" style="width: 50px; height: 40px">
+                <img src="./inputLabel.gif" alt="fileInput" style="width: 300px; height: 200px">
+            </label>
             <div>
-                <label for="surname">surname</label>
-                <input id="surname" name="surname" type="text">
+                <input id="inputLabel" type='file' accept="img/*" multiple style="display: none">
             </div>
-            <div>
-                <label for="telephone">phone</label>
-                <input id="telephone" name="tel" type="text">
-            </div>
-            <button>submit user</button>
-        </form>
-    </aside>
-    
-    <div>
-        <h3>unordered list</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>
-                <h4>ordered list</h4>
-                <ol>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                </ol>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <input id='inputJS' type='file' accept="img/*" multiple style="display: none">
-        <a href="#" id="anchor" style="font-size: 24px"><img src="./inputJS.gif" alt="fileInput"></a>
-    </div>
-    <div>
-        <input id="inputLabel" type='file' accept="img/*" multiple style="display: none">
-        <label for="inputLabel" style="width: 50px; height: 40px">
-            <img src="./inputLabel.gif" alt="fileInput" style="width: 300px; height: 200px">
-        </label>
-    </div>
-    <div>
-        <input id="dragAndDrop" type='file' accept="text/*" multiple style="display: none">
-        <label for="dragAndDrop" style="width: 50px; height: 40px">
-            <img src="./dragDrop.png" alt="fileInput" style="width: 300px; height: 200px">
-        </label>
-        
-    </div>
-    <div>
-        <h3>something about html</h3>
-        <ul>
-            <li><span>&lt; - &lt;</span></li>
-            <li><span>&gt; - &gt;</span></li>
-            <li><span>&amp; - &amp;</span></li>
-            <li><span>&nbsp; - the non-breaking space symbol </span></li>
-            <li><span>&quot;</span></li>
-        </ul>
-    </div>
-    <div>
-        <p id="myId" style="color: green;" class=".example">
-            Who wrote this code? It's SOOOOO beautiful! 😍
-        </p>
-    </div>
-    <div>
-        <h2>
-            Don't be afraid to be &lt; then a 100% success '&amp; &gt;more:
-        </h2>
-        <p>
-            "It is not the critic who counts...
-        </p>
-        <p>Theodore Roosevelt
-            &copy; 1910 Copyright
-        </p>
-    </div>
-    <div>
-        ClearlyDecoded.com provides HTML, CSS, and
-        Javascript tutorials that are crystal clear.
-        The co
-        ntent is just great (&nbsp;amazing&nbsp;)!
-    </div>
-    <footer>
-        uladzimir 01.2023 &copy;
-    </footer>
-    <script>
-        const inputJS = document.getElementById("inputJS");
-        const anchor = document.getElementById("anchor");
+        </div>
+        <div style="margin: 50px 0px 50px 50px">
+            <label for="me" style="font-size: 24px; color: palevioletred;">Click Me</label>
+            <input id='me' type="text" style="visibility: hidden" >
+        </div>
+        <div class="drop"
+            style="width: 300px; height: 300px; border: 2px solid red; background-color: green; cursor: move;"
+            draggable="true">
+        </div>
+        <div class="dropTarget"
+            style="width: 302px; height: 302px; border: 2px solid rgb(255, 251, 0); background-color: white; margin-top: 50px">
+            <!-- <input id="dragAndDrop"  type='file' accept="text/*" multiple style="display: none"> -->
+            <!-- <label for="dragAndDrop" style="width: 50px; height: 40px"> -->
+            <!-- <img src="./dragDrop.png" alt="fileInput" style="width: 300px; height: 200px"> -->
+            <!-- </label> -->
+        </div>
+        <div>
+            <h3>something about html</h3>
+            <ul>
+                <li><span>&lt; - &lt;</span></li>
+                <li><span>&gt; - &gt;</span></li>
+                <li><span>&amp; - &amp;</span></li>
+                <li><span>&nbsp; - the non-breaking space symbol </span></li>
+                <li><span>&quot;</span></li>
+            </ul>
+        </div>
+        <div>
+            <p id="myId" style="color: green;" class=".example">
+                Who wrote this code? It's SOOOOO beautiful! 😍
+            </p>
+        </div>
+        <div>
+            <h2>
+                Don't be afraid to be &lt; then a 100% success '&amp; &gt;more:
+            </h2>
+            <p>
+                "It is not the critic who counts...
+            </p>
+            <p>Theodore Roosevelt
+                &copy; 1910 Copyright
+            </p>
+        </div>
+        <div>
+            ClearlyDecoded.com provides HTML, CSS, and
+            Javascript tutorials that are crystal clear.
+            The co
+            ntent is just great (&nbsp;amazing&nbsp;)!
+        </div>
+        <footer>
+            uladzimir 01.2023 &copy;
+        </footer>
+        <script>
+            const inputJS = document.querySelector("#inputJS");
+            const anchor = document.querySelector("#anchor");
             anchor.addEventListener("click", function (e) {
                 e.preventDefault(); // предотвращает перемещение к "#"
                 if (inputJS) {
                     inputJS.click();
                 }
             }, false);
-        const dragAndDrop = document.querySelector('dragAndDrop'); //it's only part of code
-        dragAndDrop.addEventListener('dragenter', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-        }, false);
-        dragAndDrop.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-        });
-        dragAndDrop.addEventListener('drop', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            const transferData = e.dataTransfer;
-            const files = transferData.files;
-            const filesList = this.files;
-            console.log(filesList);
-        });
-    </script>
-</body>
+            inputJS.addEventListener('change' , () => {
+                console.log(inputJS.files);
+                console.log(inputJS.files[0].name);
+                console.log(inputJS.files[0]);
+                console.log(inputJS.files[1]);
+            });
+            const drop = document.querySelector('drop');
+            const dropTarget = document.querySelector(".dropTarget");
+            dropTarget.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const currentEl = e.target;
+                dropTarget.insertBefore(drop, currentEl);
+            });
+            // dropElement.addEventListener('dragover', (e) => {
+                // e.preventDefault();
+            // })
+            const me = document.querySelector('#me');
+            me.addEventListener('click', (e) => {
+                me.style.display = 'block';
+                me.style.visibility = 'visible';
+                me.focus();
+            })
+        </script>
+    </body>
+
 </html>
