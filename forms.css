@@ -1,0 +1,19 @@
+form:valid {
+    box-sizing: border-box;
+}
+.user fieldset {
+    background-color: rgb(253, 158, 206);
+}
+.user legend, label {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.user li {
+    list-style: none;
+    margin: 50px;
+}
+.user button {
+    width: 80px;
+    height: 24px;
+    margin: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="shortcut icon" href="send.png" type="image/x-icon">
+        <link rel="stylesheet" href="forms.css">
+    </head>
+
+    <body>
+        <h1>html forms</h1>
+        <form class="user" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
+            enctype="application/x-www-form-urlencoded" novalidate target="_blank">
+            <fieldset>
+                <legend>form attributes</legend>
+                <ul>
+                    <li>
+                        <label for="name">name</label>
+                        <input id="name" name="name" type="text">
+                    </li>
+                    <li>
+                        <label for="surname">surname</label>
+                        <input id="surname" name="surname" type="text">
+                    </li>
+                    <li>
+                        <label for="telephone">telephone</label>
+                        <input id="telephone" name="telephone" type="text">
+                    </li>
+                </ul>
+                <button>submit</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
