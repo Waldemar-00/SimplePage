@@ -12,14 +12,14 @@
 
     <body>
         <h1>html forms</h1>
-        <form class="user" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
+        <form id="user" class="user" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
             enctype="application/x-www-form-urlencoded" novalidate target="_blank">
             <fieldset>
                 <legend>form attributes</legend>
                 <ul>
                     <li>
                         <label for="name">name</label>
-                        <input id="name" name="name" type="text">
+                        <input id="name" name="name" type="text" autofocus>
                     </li>
                     <li>
                         <label for="surname">surname</label>
@@ -33,8 +33,16 @@
                 <button>submit</button>
             </fieldset>
         </form>
+        <select form="user" name="select" id="select" size="3" required multiple>
+            <option value="0">Make a choice</option>
+            <option value="1">One</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+        </select>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quae assumenda quis provident voluptatem!</b> Facere cupiditate numquam illo minus maiores in. Facilis debitis impedit harum animi iusto minima est quos perferendis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quae assumenda quis provident voluptatem!</b>
+            Facere cupiditate numquam illo minus maiores in. Facilis debitis impedit harum animi iusto minima est quos
+            perferendis!
         </p>
         <script src="script.js"></script>
     </body>
