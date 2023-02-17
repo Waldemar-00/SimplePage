@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Waldemar-00/SimplePage#readme",
   "dependencies": {
     "browser-sync-client": "^2.27.11"
-  }
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "keywords": []
 }
