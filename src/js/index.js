@@ -13,14 +13,40 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(inputJS.files[0]);
         console.log(inputJS.files[1]);
     });
-    const drop = document.querySelector('drop');
+
+
     const dropTarget = document.querySelector(".dropTarget");
-    dropTarget.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const currentEl = e.target;
-        dropTarget.insertBefore(drop, currentEl);
+    ['dragenter', 'dragleave', 'dragover'].forEach(eventIs => {
+        dropTarget.addEventListener(eventIs, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        }, false);
     });
+    // dropTarget.addEventListener('drop', (e) => {
+        // e.preventDefault();
+        // e.stopPropagation();
+        // console.log(e.dataTransfer.files);
+        // dropTarget.innerText = e.dataTransfer.files[0].name;
+        // dropTarget.classList.add('dropStyle');
+
+    // });
+    const dragble = document.querySelector('#dropRed');
+    dragble.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text', e.target.id);
+    });
+    dropTarget.addEventListener('drop', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    e.target.append(document.getElementById(e.dataTransfer.getData('text')));
+});
+    
+    
+    
+    
+    
+    
+    
+    
     // dropElement.addEventListener('dragover', (e) => {
     // e.preventDefault();
     // })
@@ -42,4 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.backgroundColor = e.target.value;
         color.select();
     });
+
+
+    const elementDrop = document.querySelector('[name=upload]');
+    ['dragenter', 'dragleave', 'dragover'].forEach(eventEach => {
+        elementDrop.addEventListener(eventEach, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        }, false);
+    });
+    elementDrop.addEventListener('drop', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        elementDrop.files = e.dataTransfer.files;
+        elementDrop.style.color = 'green';
+        console.log(elementDrop.value);
+    }, false);
 });

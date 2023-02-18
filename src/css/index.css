@@ -13,3 +13,23 @@ a {
 .me label {
     cursor: pointer;
 }
+.dropTarget {
+    width: 302px; 
+    height: 302px; 
+    border: 2px solid rgb(255, 251, 0); 
+    background-color: white;
+    margin-top: 50px;
+}
+.dropStyle {
+    font-size: 36px;
+    color: green;
+    text-align: center;
+    line-height: 302px;
+}
+.dropRed {
+    width: 300px; 
+    height: 300px; 
+    border: 2px solid red; 
+    background-color: green; 
+    cursor: move;
+}

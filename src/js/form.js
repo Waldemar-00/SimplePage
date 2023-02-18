@@ -27,5 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const paragr = document.querySelector('p');
         document.getSelection().setBaseAndExtent(paragr, 2, paragr, paragr.childNodes.length);
     }
-
 });
