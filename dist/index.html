@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- for SEO -->
+        <meta name="description" content="This text will be on the search page">
+        <!-- for SEO -->
         <title>Title of browser</title>
         <link rel="shortcut icon" href="/send.04dd2e16.png" type="image/x-icon">
         <link rel="stylesheet" href="/css.dfba648a.css">
@@ -33,6 +36,8 @@
         <h1>
             All about HTML tags
         </h1>
+        <hr color="red" align="center" width="50%" size="4px" noshade=""> 
+        <!-- this is not valid record, but it work -->
         <section>
             <h2>
                 section about tags
@@ -128,21 +133,20 @@
             <label for="inputJS"></label>
             <input id="inputJS" type="file" accept="img/*, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" title="photo" multiple="" style="display: none;">
         </div>
-        <div>
+        <div class="drop">
             <label for="inputLabel" style="width: 50px; height: 40px">
                 <img src="/inputLabel.21b7f2da.gif" alt="fileInput" style="width: 300px; height: 200px">
             </label>
             <div>
-                <input id="inputLabel" type="file" accept="img/*" multiple="" style="display: none">
+                <input id="inputLabel" type="file" accept="image/*" multiple="" name="upload">
             </div>
         </div>
         <div class="me">
             <label for="me" style="font-size: 24px; color: palevioletred;">Click Me</label>
             <input id="me" type="text" style="visibility: hidden">
         </div>
-        <div class="drop" style="width: 300px; height: 300px; border: 2px solid red; background-color: green; cursor: move;" draggable="true">
-        </div>
-        <div class="dropTarget" style="width: 302px; height: 302px; border: 2px solid rgb(255, 251, 0); background-color: white; margin-top: 50px">
+        <div id="dropRed" class="dropRed" draggable="true"></div>
+        <div class="dropTarget">
         </div>
         <div style="margin: 40px">
             <label for="color" style="font-size: 24px; color: red">color</label>
@@ -185,5 +189,4 @@
         </footer>
         <script src="/js.d818e0ef.js"></script>
     </body>
-
 </html>

@@ -133,14 +133,31 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(inputJS.files[0]);
     console.log(inputJS.files[1]);
   });
-  var drop = document.querySelector('drop');
   var dropTarget = document.querySelector(".dropTarget");
-  dropTarget.addEventListener('dragover', function (e) {
+  ['dragenter', 'dragleave', 'dragover'].forEach(function (eventIs) {
+    dropTarget.addEventListener(eventIs, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }, false);
+  });
+  // dropTarget.addEventListener('drop', (e) => {
+  // e.preventDefault();
+  // e.stopPropagation();
+  // console.log(e.dataTransfer.files);
+  // dropTarget.innerText = e.dataTransfer.files[0].name;
+  // dropTarget.classList.add('dropStyle');
+
+  // });
+  var dragble = document.querySelector('#dropRed');
+  dragble.addEventListener('dragstart', function (e) {
+    e.dataTransfer.setData('text', e.target.id);
+  });
+  dropTarget.addEventListener('drop', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    var currentEl = e.target;
-    dropTarget.insertBefore(drop, currentEl);
+    e.target.append(document.getElementById(e.dataTransfer.getData('text')));
   });
+
   // dropElement.addEventListener('dragover', (e) => {
   // e.preventDefault();
   // })
@@ -162,6 +179,20 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.backgroundColor = e.target.value;
     color.select();
   });
+  var elementDrop = document.querySelector('[name=upload]');
+  ['dragenter', 'dragleave', 'dragover'].forEach(function (eventEach) {
+    elementDrop.addEventListener(eventEach, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }, false);
+  });
+  elementDrop.addEventListener('drop', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    elementDrop.files = e.dataTransfer.files;
+    elementDrop.style.color = 'green';
+    console.log(elementDrop.value);
+  }, false);
 });
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -188,7 +219,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54740" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62511" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
